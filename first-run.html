@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071b20">
+  <title>Welcome to Safego365</title>
+  <link rel="stylesheet" href="first-run.css">
+</head>
+<body>
+  <main class="app-shell" aria-label="Safego365 first-run experience">
+    <section class="mock-app" aria-hidden="true">
+      <header class="mock-header">
+        <img src="safego365-logo.png" alt="" class="mock-logo">
+        <span class="mock-avatar">A</span>
+      </header>
+      <div class="mock-content">
+        <div class="mock-greeting">Good morning</div>
+        <div class="mock-title">Your safety, connected.</div>
+        <div class="mock-map"><span class="map-route"></span><span class="map-pin pin-one">●</span><span class="map-pin pin-two">●</span><span class="map-label">Active safety area</span></div>
+        <div class="mock-cards"><div><b>My safety</b><small>Everything looks good</small></div><div><b>Active trip</b><small>Not started</small></div></div>
+      </div>
+      <nav class="mock-bottom"><span class="active">⌂<small>Home</small></span><span>◉<small>Trips</small></span><span>◌<small>Alerts</small></span><span>◯<small>Profile</small></span></nav>
+    </section>
+    <div class="scrim"></div>
+    <section class="consent-card" role="dialog" aria-modal="true" aria-labelledby="consent-title" aria-describedby="consent-copy">
+      <div class="consent-handle" aria-hidden="true"></div>
+      <div class="consent-brand"><img src="safego365-logo.png" alt="Safego365" class="consent-logo"></div>
+      <div class="consent-kicker">Welcome to Safego365</div>
+      <h1 id="consent-title">Your safety starts here.</h1>
+      <p id="consent-copy">Before you continue, please review and accept our Terms and Conditions and Privacy Policy. They explain how Safego365 supports your organization’s safety process and handles your information.</p>
+      <div class="legal-links"><a href="terms.html" target="_blank" rel="noopener">Terms and Conditions <span aria-hidden="true">↗</span></a><a href="privacy.html" target="_blank" rel="noopener">Privacy Policy <span aria-hidden="true">↗</span></a></div>
+      <label class="agreement"><input id="agreement" type="checkbox"><span class="custom-check" aria-hidden="true"></span><span>I have read and agree to the <a href="terms.html" target="_blank" rel="noopener">Terms</a> and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
+      <button id="accept" class="accept-button" type="button" disabled>Accept and continue <span aria-hidden="true">→</span></button>
+      <p class="support-copy">You can review these documents anytime from Settings.</p>
+    </section>
+  </main>
+  <script src="first-run.js"></script>
+</body>
+</html>
